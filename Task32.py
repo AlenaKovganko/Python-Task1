@@ -1,11 +1,10 @@
 # 32 Для натурального N создать словарь индекс-значение, состоящий из элементов последовательности 3k + 1.
-def d_N(N):
+def dictionary(N):
     d = {}
     for k in range(1, N + 1):
-        res = (3 * k) + 1
-        d[k] = res
+        d[k] = (3 * k) + 1   
     return d
-print(d_N(N = int(input('Введите N '))))
+print(dictionary(N = int(input('Введите N '))))
 
 
 
