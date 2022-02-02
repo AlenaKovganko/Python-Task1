@@ -1,7 +1,13 @@
 # 33 Пользователь задаёт две строки. Определить количество количество вхождений одной строки в другой.
-def string(string1, string2):
-    s1 = set(string1)
-    s2 = set (string2)
-    i = s1.intersection(s2) 
-    return(i)
-print(string(string1 = input('Введите строку 1 '),string2 = input('Введите строку 2')))
+def string(str1, str2):
+    count = 0
+    symbol = ''
+    u = 0
+    while u < len(str2):
+        for i in str1:
+            for j in str2:
+                if i==j:
+                    count+=1
+        u+=1
+    return(count // u) // u
+print(string(str1 = input('Введите строку 1 '),str2 = input('Введите строку 2 ')))
