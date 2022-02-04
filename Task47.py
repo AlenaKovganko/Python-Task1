@@ -2,4 +2,6 @@
 A = input('Введите числа  ').split()
 for i in range(len(A)):
     A[i] = int(A[i])
-print(A)
+print('Полученный список', A)
+print(f'Большее число', max(A))
+print(f'Меньшее число',min(A))
