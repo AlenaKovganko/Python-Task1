@@ -1,9 +1,14 @@
 # 42 Найти сумму чисел списка стоящих на нечетной позиции
 
-list = [3, 1, 8 ,1 ,9 , 1]
+from random import randrange
+n = int(input('Введите количество чисел списка '))
+a = [randrange(1, 10) for i in range(n)]
+print('Рандомный список')
+print(a)
+
 sum = 0
-for i in range(len(list)):
+for i in range(len(a)):
     if i%2 !=0:
-        sum += list[i]
-print(sum)
+        sum += a[i]
+print(f'Сумма чисел, стоящих в списке на нечетной позиции {sum}')
 
