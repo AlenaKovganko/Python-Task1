@@ -10,5 +10,5 @@ def fib2(N1, N2):
         fibon.append(fib(i))
     return fibon
 
-print(fib2(N1 = int(input('Введите начальное число')),N2 = int(input('Введите начальное число'))))
+print(fib2(N1 = int(input('Введите начальное число')),N2 = int(input('Введите конечное число'))))
 
