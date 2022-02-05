@@ -1,7 +1,7 @@
 # 51 Составить список простых множителей натурального числа N
-A = input('Введите числа  ').split()
-for i in range(len(A)):
-    A[i] = int(A[i])
-print(A)
-
-
+N = input(int('Введите числа  '))
+list = []
+while N > 0:    
+    if N%2 == 0:
+        list.append(2)
+print(list)
