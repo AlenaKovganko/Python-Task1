@@ -1,11 +1,20 @@
-# Дана последовательность чисел. Получить список неповторяющихся элементов исходной последовательности
-from random import randrange
-n = int(input('Введите количество чисел '))
-a =[randrange(1,5) for i in range(n)]
-print(a)
-b = []
-print(b)
+# 52. Дана последовательность чисел. Получить список неповторяющихся элементов исходной последовательности 
+# Пример: [1, 2, 3, 5, 1, 5, 3, 10] => [1, 2, 3, 5, 10]
+
+""" a = [1, 2, 3, 5, 1, 5, 3, 10]
+res = list(set(a))
+print(res)"""
+
+a = [1, 2, 3, 5, 5]
+res  = []
+
 for i in a:
-    for j in (len(b)):
-        b.append(int(i))   
-print(b)
+    count = 0
+    for j in res:
+        if i == j: count += 1
+    if count == 0: res.append(i)
+
+print(res)
+
+
+
